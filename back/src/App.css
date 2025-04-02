@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+#root {
+  font-family: "Nunito", sans-serif;
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background: radial-gradient(circle at top right, #005CFF, transparent 40%), 
+            radial-gradient(circle at bottom left, #005CFF, transparent 20%), 
+            #1F1F1F;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img-bolinhas {
+  position: absolute;
+  left: 270px;
+  top: 80px;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  width: 1156px;
+  height: 537px;
+  z-index: 2;
+}
+
+.container-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-titulo .img-github {
+ width: 58px;
+ height: 58px;
+}
+
+.container-titulo h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.search-box input {
+  width: 503px;
+  padding: 25px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.search-box input::placeholder{
+  color: black;
+  font-weight: 500;
+}
+
+.search-box button {
+  position: relative;
+  right: 57px;
+  background: #005CFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.error-box {
+  background: #D9D9D9;
+  font-size: 25px;
+  font-weight: 400;
+  color: #FF0000;
+  margin-top: 25px;
+  padding: 25px 40px;
+  border-radius: 10px;
+}
+
+.profile-box {
+  width: 100%;
+  max-width: 804px;
+  height: auto;
+  max-height: 257px;
+  background: #D9D9D9;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto; 
+  
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #005CFF;
+  margin-right: 20px;
+  
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  max-width: 550px;
+}
+
+.profile-info h2 {
+  color: #005CFF;
+  font-size: 20px;
+  margin: 0 0 5px 0; 
+  white-space: nowrap;
+}
+
+.profile-info p {
+  font-size: 15px;
+  color: #000000;
+  text-align: justify;
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.4;
+  margin: 0;
+  padding-right: 20px;
+}
